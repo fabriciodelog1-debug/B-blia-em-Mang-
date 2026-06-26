@@ -1,0 +1,6 @@
+{
+  "name": "Bíblia em Mangá",
+  "description": "Uma Bíblia interativa em quadrinhos estilo mangá shonen com 10 personagens bíblicos, notas arqueológicas e gerador de roteiros por IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
