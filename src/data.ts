@@ -87,7 +87,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "O único homem justo e íntegro em uma geração corrompida pela violência. Obedeceu fielmente às instruções divinas exatas para construir uma arca colossal de madeira de gofer no meio da terra firme, salvaguardando a criação física e reiniciando a humanidade.",
     keyVerse: "Noé fez tudo exatamente como Deus lhe havia ordenado.",
     keyVerseRef: "Gênesis 6:22",
-    illustrationUrl: "",
+    illustrationUrl: "/assets/images/manga_noah_1782572983669.jpg",
   },
   abraao: {
     id: "abraao",
@@ -100,7 +100,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "Chamado a sair de sua terra natal, Ur dos Caldeus, para uma terra desconhecida. Deus prometeu que sua descendência seria tão numerosa quanto as estrelas do céu. Provado ao extremo no Monte Moriá, tornou-se o patriarca da aliança monoteísta.",
     keyVerse: "Olhe para o céu e conte as estrelas, se é que pode contá-las. Assim será a sua descendência.",
     keyVerseRef: "Gênesis 15:5",
-    illustrationUrl: "",
+    illustrationUrl: "/assets/images/manga_abraham_1782573002222.jpg",
   },
   jose: {
     id: "jose",
@@ -113,7 +113,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "O filho favorito de Jacó, traído e vendido como escravo por seus próprios irmãos devido a seus sonhos proféticos. No Egito, subiu da masmorra ao trono como Vizir de Faraó devido à sua sabedoria divinamente concedida, salvando o Oriente Médio da fome extrema.",
     keyVerse: "Vocês planejaram o mal contra mim, mas Deus o tornou em bem, para salvar muitas vidas.",
     keyVerseRef: "Gênesis 50:20",
-    illustrationUrl: "",
+    illustrationUrl: "/assets/images/manga_joseph_1782573016794.jpg",
   },
   moises: {
     id: "moises",
@@ -139,7 +139,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "Sucessor escolhido de Moisés e comandante das forças de Israel. Conhecido por sua bravura inabalável, liderou a travessia milagrosa do rio Jordão e a campanha militar lendária contra as cidades fortificadas de Canaã, a começar pelos muros intransponíveis de Jericó.",
     keyVerse: "Não fui eu que lhe ordenei? Seja forte e corajoso! Não se apavore, pois o Senhor estará com você.",
     keyVerseRef: "Josué 1:9",
-    illustrationUrl: "",
+    illustrationUrl: "/assets/images/manga_joshua_1782573030512.jpg",
   },
   david: {
     id: "david",
@@ -165,7 +165,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "Filho e sucessor de Davi. Diante do privilégio de pedir qualquer coisa a Deus, pediu sabedoria e discernimento para governar seu povo. Governou em uma era de paz e riqueza sem precedentes, construindo o majestoso Primeiro Templo de Jerusalém e escrevendo Provérbios e Eclesiastes.",
     keyVerse: "Dei-lhe um coração sábio e capaz de discernir, de modo que nunca houve nem haverá ninguém como você.",
     keyVerseRef: "1 Reis 3:12",
-    illustrationUrl: "",
+    illustrationUrl: "/assets/images/manga_solomon_1782573042797.jpg",
   },
   jesus_vida: {
     id: "jesus_vida",

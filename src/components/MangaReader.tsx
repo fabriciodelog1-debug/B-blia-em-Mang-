@@ -215,6 +215,26 @@ function MangaVectorIllustration({ characterId, panelIndex, panelTitle, actionDe
   );
 }
 
+// Helper to dynamically pan and zoom images based on the panel index to create a multi-scene storyboard
+function getPanelImageStyle(index: number): string {
+  switch (index) {
+    case 0:
+      return "object-[center_top] scale-100";
+    case 1:
+      return "object-[20%_35%] scale-115";
+    case 2:
+      return "object-[80%_40%] scale-120";
+    case 3:
+      return "object-[center_25%] scale-[1.08]";
+    case 4:
+      return "object-[35%_65%] scale-125";
+    case 5:
+      return "object-center scale-100";
+    default:
+      return "object-center scale-100";
+  }
+}
+
 // Global Image Mapping Helper
 function getPanelImageUrl(characterId: string, panelIndex: number): string {
   if (characterId === "adao_eva" && panelIndex === 0) {
@@ -232,6 +252,13 @@ function getPanelImageUrl(characterId: string, panelIndex: number): string {
   } else if (characterId === "jesus_ressurreicao" && panelIndex === 5) {
     return "/assets/images/manga_jesus_ressurreicao_1782499203519.jpg";
   }
+
+  // Fallback to the character's general epic manga illustration
+  const char = CHARACTERS[characterId];
+  if (char && char.illustrationUrl) {
+    return char.illustrationUrl;
+  }
+
   return "";
 }
 
@@ -258,8 +285,8 @@ function ComicPanelCard({ panel, index, characterId, onClick, className = "" }: 
             src={imgUrl}
             alt={panel.title}
             referrerPolicy="no-referrer"
-            className={`w-full h-full object-cover brightness-95 contrast-110 ${
-              imgUrl.includes("color") ? "" : "grayscale brightness-90 contrast-125 group-hover:grayscale-0 transition-all duration-700"
+            className={`w-full h-full object-cover brightness-95 contrast-110 transition-all duration-700 ${getPanelImageStyle(index)} ${
+              imgUrl.includes("color") ? "" : "grayscale brightness-90 contrast-125 group-hover:grayscale-0"
             }`}
           />
         ) : (
@@ -715,8 +742,8 @@ export default function MangaReader({ chapter, onBackToCover, onNextChapter, onP
                                 src={imgUrl}
                                 alt={currentPanel.title}
                                 referrerPolicy="no-referrer"
-                                className={`w-full h-full object-cover brightness-95 contrast-110 rounded-lg ${
-                                  imgUrl.includes("color") ? "" : "grayscale brightness-90 contrast-125 hover:grayscale-0 transition-all duration-700"
+                                className={`w-full h-full object-cover brightness-95 contrast-110 rounded-lg transition-all duration-700 ${getPanelImageStyle(currentPanelIndex)} ${
+                                  imgUrl.includes("color") ? "" : "grayscale brightness-90 contrast-125 hover:grayscale-0"
                                 }`}
                               />
                             );
@@ -994,7 +1021,7 @@ export default function MangaReader({ chapter, onBackToCover, onNextChapter, onP
                         src={imgUrl}
                         alt={panels[zoomedPanelIndex].title}
                         referrerPolicy="no-referrer"
-                        className="w-full h-full object-cover brightness-95 contrast-110"
+                        className={`w-full h-full object-cover brightness-95 contrast-110 transition-all duration-700 ${getPanelImageStyle(zoomedPanelIndex)}`}
                       />
                     );
                   }
