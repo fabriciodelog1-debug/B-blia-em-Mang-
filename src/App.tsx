@@ -47,11 +47,11 @@ export default function App() {
           className="flex items-center gap-2 cursor-pointer group"
           id="header-logo-container"
         >
-          <div className="bg-black text-amber-500 border-2 border-black p-1.5 rounded-lg group-hover:bg-amber-500 group-hover:text-black transition-colors">
+          <div className="bg-black text-yellow-400 border-2 border-black p-1.5 rounded-lg group-hover:bg-yellow-400 group-hover:text-black transition-colors">
             <BookMarked size={20} />
           </div>
-          <span className="font-black text-lg tracking-tighter uppercase font-sans">
-            Bíblia <span className="bg-amber-500 text-black px-1.5 py-0.5 rounded border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ml-1">MANGÁ</span>
+          <span className="font-black text-lg tracking-tighter uppercase font-sans text-zinc-950">
+            Bíblia em <span className="bg-yellow-400 text-black px-2 py-0.5 rounded border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ml-1 font-extrabold">Ação</span>
           </span>
         </div>
 
@@ -151,9 +151,9 @@ export default function App() {
 
       {/* Comic styled footer */}
       <footer className="border-t-4 border-black mt-20 pt-8 pb-12 bg-white text-center text-xs font-mono text-zinc-500 space-y-2">
-        <div>BÍBLIA EM MANGÁ • ESTUDO HISTÓRICO, ARQUEOLÓGICO E TEOLÓGICO</div>
+        <div>BÍBLIA EM AÇÃO • ESTUDO HISTÓRICO, ARQUEOLÓGICO E TEOLÓGICO</div>
         <div className="flex justify-center gap-1 items-center">
-          Desenvolvido no Estilo Shonen • © {new Date().getFullYear()} Todos os direitos reservados.
+          Desenvolvido no Estilo de Quadrinhos Épicos • © {new Date().getFullYear()} Todos os direitos reservados.
         </div>
       </footer>
 

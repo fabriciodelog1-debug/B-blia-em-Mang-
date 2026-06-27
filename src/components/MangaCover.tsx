@@ -18,18 +18,18 @@ export default function MangaCover({ chapters, onSelectChapter, onSelectTab }: M
         <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"></div>
         
         <div className="lg:col-span-7 space-y-6 relative z-10">
-          <div className="inline-flex items-center gap-2 bg-amber-500 text-black px-3 py-1 rounded-full text-xs font-black uppercase font-mono shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] border border-black">
+          <div className="inline-flex items-center gap-2 bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-black uppercase font-mono shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] border border-black">
             <Sparkles size={12} />
-            Estilo Shonen Épico
+            Estilo de Quadrinhos Épicos
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-black text-black tracking-tight leading-none uppercase">
+          <h1 className="text-4xl md:text-7xl font-black text-black tracking-tight leading-none uppercase">
             BÍBLIA EM <br className="hidden md:block"/>
-            <span className="bg-amber-500 text-black px-2 py-1 inline-block border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-1 mt-2">MANGÁ</span>
+            <span className="bg-yellow-400 text-black px-4 py-2 inline-block border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-1 mt-2 tracking-tighter">AÇÃO</span>
           </h1>
           
           <p className="text-lg text-zinc-700 leading-relaxed font-sans max-w-xl">
-            Explore as Escrituras Sagradas através de ilustrações dinâmicas estilo Shonen.
+            Explore as Escrituras Sagradas através de ilustrações dinâmicas e páginas de quadrinhos integradas, inspiradas no clássico "Bíblia em Ação".
             Uma viagem histórica, arqueológica e teológica precisa, do nascimento à glória de 10 grandes personagens bíblicos, com diálogos fiéis aos textos originais e explicações educativas de margem.
           </p>
 
@@ -59,19 +59,19 @@ export default function MangaCover({ chapters, onSelectChapter, onSelectTab }: M
             whileHover={{ scale: 1.02, rotate: 1 }}
             className="w-full max-w-sm rounded-xl border-4 border-black overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-zinc-950 p-2 relative group"
           >
-            <div className="absolute top-4 left-4 bg-red-600 text-white font-black uppercase text-[10px] px-2 py-0.5 rounded shadow z-10 font-mono tracking-widest border border-black">
-              SHONEN JUMP OF COVENANT
+            <div className="absolute top-4 left-4 bg-yellow-400 text-black font-black uppercase text-[10px] px-2 py-0.5 rounded shadow z-10 font-mono tracking-wider border-2 border-black">
+              EDIÇÃO HISTÓRICA & GEOGRÁFICA
             </div>
             <div className="border-2 border-zinc-800 rounded-lg overflow-hidden bg-zinc-900 aspect-[3/4]">
               <img
-                src="/src/assets/images/manga_capa_biblia_1782499151394.jpg"
-                alt="Bíblia Mangá Capa"
+                src="/assets/images/manga_capa_biblia_1782499151394.jpg"
+                alt="Bíblia em Ação Capa"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
               />
             </div>
             <div className="pt-3 pb-1 text-center font-mono text-[11px] text-zinc-400">
-              EDIÇÃO ESPECIAL: AS CRÔNICAS DOS HERÓIS DA FÉ
+              BÍBLIA EM AÇÃO: AS CRÔNICAS DOS HERÓIS DA FÉ
             </div>
           </motion.div>
         </div>
@@ -141,7 +141,7 @@ export default function MangaCover({ chapters, onSelectChapter, onSelectTab }: M
                 {/* Chapter Thumbnail */}
                 <div className="h-36 bg-zinc-900 border-b-2 border-black relative overflow-hidden flex items-center justify-center">
                   <img
-                    src={char.illustrationUrl || "/src/assets/images/manga_capa_biblia_1782499151394.jpg"}
+                    src={char.illustrationUrl || "/assets/images/manga_capa_biblia_1782499151394.jpg"}
                     alt={chapter.title}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"

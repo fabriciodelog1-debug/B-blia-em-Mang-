@@ -74,7 +74,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "Criados à imagem e semelhança do Criador para governar e zelar pelo Jardim do Éden. Enfrentaram o primeiro teste moral da humanidade diante da Serpente e do Fruto do Conhecimento, resultando no exílio, mas também na promessa de redenção futura.",
     keyVerse: "Criou Deus o homem à sua imagem, à imagem de Deus o criou; homem e mulher os criou.",
     keyVerseRef: "Gênesis 1:27",
-    illustrationUrl: "/src/assets/images/manga_adao_eva_1782499164526.jpg",
+    illustrationUrl: "/assets/images/manga_adao_eva_1782499164526.jpg",
   },
   noe: {
     id: "noe",
@@ -126,7 +126,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "Criado na corte do Faraó, fugiu para o deserto após defender um irmão hebreu. Do meio de uma sarça ardente que não se consumia, Deus o comissionou para confrontar o maior império da época, libertar Israel da escravidão e receber a Lei (Torá) no Monte Sinai.",
     keyVerse: "Moisés estendeu a mão sobre o mar, e o Senhor afastou o mar com um forte vento oriental.",
     keyVerseRef: "Êxodo 14:21",
-    illustrationUrl: "/src/assets/images/manga_moses_color_1782506122152.jpg", // NEW BEAUTIFUL COLOR SPREAD
+    illustrationUrl: "/assets/images/manga_moses_color_1782506122152.jpg", // NEW BEAUTIFUL COLOR SPREAD
   },
   josue: {
     id: "josue",
@@ -152,7 +152,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "Pastor de ovelhas, tocador de harpa e o menor dos filhos de Jessé. Ungido secretamente pelo profeta Samuel, ganhou fama imediata ao derrubar o guerreiro filisteu gigante Golias com uma funda. Tornou-se o maior rei guerreiro de Israel, estabelecendo a dinastia messiânica.",
     keyVerse: "Você vem contra mim com espada e lança, mas eu vou contra você em nome do Senhor dos Exércitos.",
     keyVerseRef: "1 Samuel 17:45",
-    illustrationUrl: "/src/assets/images/manga_david_1782499191963.jpg",
+    illustrationUrl: "/assets/images/manga_david_1782499191963.jpg",
   },
   salomao: {
     id: "salomao",
@@ -178,7 +178,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "Nascido humildemente em uma manjedoura em Belém, cumpriu centenas de profecias messiânicas. Liderou um ministério revolucionário anunciando o Reino de Deus, curando doentes, ressuscitando mortos, demonstrando amor radical e chamando discípulos comuns para pescar homens.",
     keyVerse: "Hoje, na cidade de Davi, nasceu o Salvador, que é Cristo, o Senhor.",
     keyVerseRef: "Lucas 2:11",
-    illustrationUrl: "/src/assets/images/manga_jesus_color_1782506101211.jpg", // NEW BEAUTIFUL COLOR SPREAD
+    illustrationUrl: "/assets/images/manga_jesus_color_1782506101211.jpg", // NEW BEAUTIFUL COLOR SPREAD
   },
   jesus_ressurreicao: {
     id: "jesus_ressurreicao",
@@ -191,7 +191,7 @@ export const CHARACTERS: Record<string, Character> = {
     bio: "A maior narrativa dramática e redentora da história humana. Traído por trinta moedas, julgado injustamente por tribunais humanos, foi crucificado para assumir a culpa de toda a humanidade. Três dias após seu sepultamento, ressuscitou em glória física eterna, abrindo o caminho para a eternidade.",
     keyVerse: "Ele não está aqui; ressuscitou, como tinha dito. Venham ver o lugar onde ele jazia.",
     keyVerseRef: "Mateus 28:6",
-    illustrationUrl: "/src/assets/images/manga_jesus_ressurreicao_1782499203519.jpg",
+    illustrationUrl: "/assets/images/manga_jesus_ressurreicao_1782499203519.jpg",
   }
 };
 
